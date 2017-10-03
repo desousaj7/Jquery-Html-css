@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    font-family: Century Gothic;
+    background-color: #E86866;
+    box-shadow: 2px 0px 5px  rgba(0, 0, 0, 0.50);
+
+
+}
+
+.logo{
+    padding: 15px;
+    max-height: 200px;
+    max-width: 100px;
+
+}
+
+.nav-superior{
+    overflow: auto;
+    float: right;
+    width: 450px;
+}
+.nav-superior ul{
+    padding-top: 25px;
+    list-style: none;
+}
+
+.nav-superior ul li a:hover, .dropdow .button:hover{
+    background-color: #EFEFEF;
+    color:#443344;
+}
+
+.nav-superior ul  li a, .dropdow .button{
+    text-decoration:none;   
+    color: white;
+    position: relative;
+}
+
+.drop-conteudo ul li a{
+    display: block;
+    padding: 5px 20px;
+    
+}
+.dropdow{
+    float: left;
+}
+.dropdow .button{
+    float: none;
+    padding: 15px;
+}
+.button-login{
+    float:none;
+    padding: 15px;
+    background-color: white;
+}
+.drop-conteudo{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    background-color: #443344;
+    overflow: hidden;
+    max-height: 0;
+    width: 150px;
+    transition: max-height 300ms;
+
+}
+.dropdow:hover .drop-conteudo{
+    overflow: visible;
+    max-height: 1000px;
+}
+
+.cards-content{
+    background-color: #E86866;
+    width: 100%;
+    height: 300px;
+}
+
+.cards{
+    background-color: #FFDDDD;
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+}
+
+.nav-lateral{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    float: left;
+    background:linear-gradient(#443344, #5C405C) ;
+    box-shadow: 2px 0px 5px  rgba(0, 0, 0, 0.30);
+    position: relative;
+    z-index: -10;
+    height: 100%;
+    width: 100vw;
+}
+
+.nav-lateral ul{
+    list-style: none;
+
+}
+.nav-lateral ul li a{
+    padding: 10px;
+    padding-left: 20px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-lateral ul li a:hover{
+    background-color: white;
+    box-shadow: 2px 0px 5px  rgba(0, 0, 0, 0.80);
+    color: #443344;
+}
+.nav-lateral h4{
+    padding: 10px;
+    color:white;
+}
+
+aside{
+    float: right;
+    text-align: center;
+    width: 15vw;
+    height: 100vh;
+    position: relative;;
+}
+
+aside h4, p{
+    font-family: Century Gothic;
+    padding: 10px;
+}
+
+.conteudo{
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.bola{
+    float: left;
+    padding: 10px;
+    position: relative;
+    animation: animar 4s infinite alternate;
+    animation-timing-function: linear;
+
+}
+.bola img{
+    height: 100px;
+    width: 250px;
+}
+
+@keyframes animar {
+    from {left: 0;
+        transform: rotate(0deg);}
+    to {left: 100%;
+        transform: rotate(360deg)}
+}
+
+@media screen and (min-width: 600px) {
+    .nav-lateral{
+        float: left;
+        width: 15vw;
+        height: 100vh;
+    }
+    .bola{
+            float: left;
+            padding: 10px;
+            position: relative;
+            animation: animar 4s infinite alternate;
+            animation-timing-function: linear;
+        
+        
+    }
+    .bola img{
+        height: 200px;
+        width: 250px;
+    }
+    
+}
