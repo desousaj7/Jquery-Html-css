@@ -11,11 +11,9 @@ header{
 
 }
 
-.logo{
+span{
     padding: 15px;
-    max-height: 200px;
-    max-width: 100px;
-
+    color: #fff;
 }
 
 .nav-superior{
